@@ -1,0 +1,5 @@
+# fit multiple linear regression for kestrel data
+
+kestrels <- readRDS("kestrels.rds")
+
+fit <- lm(weight_in_grams ~ age_in_days + sex)
