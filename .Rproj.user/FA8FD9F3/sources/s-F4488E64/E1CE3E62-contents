@@ -1,5 +1,7 @@
 # fit multiple linear regression for kestrel data
 
-kestrels <- readRDS("kestrels.rds")
+write.csv(kestrels, file = here::here("kestrels.csv"))
+
+kestrels <- read.csv("https://github.com/lizwillow/teaching_demo/raw/main/kestrels.csv")
 
 fit <- lm(weight_in_grams ~ age_in_days + sex)
